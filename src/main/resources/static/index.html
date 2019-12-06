@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h2>List of all queued aircrafts</h2>
+
+<h2>Insert new aircraft into the queue</h2>
+
+<form action="http://locahost:8080/aircraft/insert" method="put">
+    <input name="id" type="text" value=""/>
+    <select>
+        <option value="Emergency">Emergency</option>
+        <option value="VIP">VIP</option>
+        <option value="Passenger">Passenger</option>
+        <option value="Cargo">Cargo</option>
+    </select>
+    <select>
+        <option value="LARGE">LARGE</option>
+        <option value="SMALL">SMALL</option>
+    </select>
+    <input type="submit" value="Insert"/>
+</form>
+
+</body>
+</html>
